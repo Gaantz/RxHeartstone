@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import RxSwift
+import RxDataSources
+import RxCocoa
 
 class CardsViewController: UIViewController {
-
+    
+    var disposeBag = DisposeBag()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+            /*
+        .bindTo(tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { row, element, cell in
+                cell.textLabel?.text = "\(element) @ row \(row)"
+            }.disposed(by: disposeBag)
+ */
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+     
+        Observable.just(navigationController!.viewControllers).flatMap({
+            ($0[0] as! ViewController).cards!
+        }).bindTo(tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { row, element, cell in
+            cell.textLabel?.text = "\(element.name)<"
+        }.disposed(by: disposeBag)
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
 }

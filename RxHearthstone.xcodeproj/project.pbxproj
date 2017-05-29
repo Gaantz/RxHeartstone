@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271AFD74175B46E0CCEC2300 /* Pods_RxHearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6686DF175F02811D0DCFE01C /* Pods_RxHearthstone.framework */; };
+		400B026E1EDB602E00E2B53D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400B026D1EDB602E00E2B53D /* Card.swift */; };
+		400B02711EDB690900E2B53D /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400B02701EDB690900E2B53D /* CardsViewController.swift */; };
 		40971BAA1EDB0EAC004A7E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BA91EDB0EAC004A7E4D /* AppDelegate.swift */; };
 		40971BAC1EDB0EAC004A7E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BAB1EDB0EAC004A7E4D /* ViewController.swift */; };
 		40971BAF1EDB0EAC004A7E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40971BAD1EDB0EAC004A7E4D /* Main.storyboard */; };
 		40971BB11EDB0EAC004A7E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40971BB01EDB0EAC004A7E4D /* Assets.xcassets */; };
 		40971BB41EDB0EAC004A7E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40971BB21EDB0EAC004A7E4D /* LaunchScreen.storyboard */; };
+		40971BBC1EDB101E004A7E4D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BBB1EDB101E004A7E4D /* Router.swift */; };
+		40971BBE1EDB1B72004A7E4D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BBD1EDB1B72004A7E4D /* ApiManager.swift */; };
+		40971BC01EDB1D2F004A7E4D /* HearthstoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BBF1EDB1D2F004A7E4D /* HearthstoneService.swift */; };
+		40971BC31EDB22E1004A7E4D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40971BC21EDB22E1004A7E4D /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12E64F47D28C32DF8F927885 /* Pods-RxHearthstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxHearthstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxHearthstone/Pods-RxHearthstone.debug.xcconfig"; sourceTree = "<group>"; };
+		2685E5F3E5325D3EBFC29C80 /* Pods-RxHearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxHearthstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxHearthstone/Pods-RxHearthstone.release.xcconfig"; sourceTree = "<group>"; };
+		400B026D1EDB602E00E2B53D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		400B02701EDB690900E2B53D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		40971BA61EDB0EAC004A7E4D /* RxHearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxHearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40971BA91EDB0EAC004A7E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40971BAB1EDB0EAC004A7E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,11 @@
 		40971BB01EDB0EAC004A7E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40971BB31EDB0EAC004A7E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40971BB51EDB0EAC004A7E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40971BBB1EDB101E004A7E4D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		40971BBD1EDB1B72004A7E4D /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		40971BBF1EDB1D2F004A7E4D /* HearthstoneService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearthstoneService.swift; sourceTree = "<group>"; };
+		40971BC21EDB22E1004A7E4D /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		6686DF175F02811D0DCFE01C /* Pods_RxHearthstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxHearthstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271AFD74175B46E0CCEC2300 /* Pods_RxHearthstone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00826BAB39785EB621863B90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12E64F47D28C32DF8F927885 /* Pods-RxHearthstone.debug.xcconfig */,
+				2685E5F3E5325D3EBFC29C80 /* Pods-RxHearthstone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		400B026F1EDB68F000E2B53D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40971BAB1EDB0EAC004A7E4D /* ViewController.swift */,
+				400B02701EDB690900E2B53D /* CardsViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		40971B9D1EDB0EAC004A7E4D = {
 			isa = PBXGroup;
 			children = (
 				40971BA81EDB0EAC004A7E4D /* RxHearthstone */,
 				40971BA71EDB0EAC004A7E4D /* Products */,
+				00826BAB39785EB621863B90 /* Pods */,
+				FB6A507CF0CE475D85131EFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +91,35 @@
 		40971BA81EDB0EAC004A7E4D /* RxHearthstone */ = {
 			isa = PBXGroup;
 			children = (
-				40971BA91EDB0EAC004A7E4D /* AppDelegate.swift */,
-				40971BAB1EDB0EAC004A7E4D /* ViewController.swift */,
 				40971BAD1EDB0EAC004A7E4D /* Main.storyboard */,
+				400B026F1EDB68F000E2B53D /* View */,
+				40971BC11EDB1F51004A7E4D /* Beans */,
+				40971BBD1EDB1B72004A7E4D /* ApiManager.swift */,
+				40971BBB1EDB101E004A7E4D /* Router.swift */,
+				40971BBF1EDB1D2F004A7E4D /* HearthstoneService.swift */,
+				40971BA91EDB0EAC004A7E4D /* AppDelegate.swift */,
 				40971BB01EDB0EAC004A7E4D /* Assets.xcassets */,
 				40971BB21EDB0EAC004A7E4D /* LaunchScreen.storyboard */,
 				40971BB51EDB0EAC004A7E4D /* Info.plist */,
 			);
 			path = RxHearthstone;
+			sourceTree = "<group>";
+		};
+		40971BC11EDB1F51004A7E4D /* Beans */ = {
+			isa = PBXGroup;
+			children = (
+				40971BC21EDB22E1004A7E4D /* Info.swift */,
+				400B026D1EDB602E00E2B53D /* Card.swift */,
+			);
+			name = Beans;
+			sourceTree = "<group>";
+		};
+		FB6A507CF0CE475D85131EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6686DF175F02811D0DCFE01C /* Pods_RxHearthstone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40971BB81EDB0EAC004A7E4D /* Build configuration list for PBXNativeTarget "RxHearthstone" */;
 			buildPhases = (
+				FA6E7543F661B615D8066798 /* [CP] Check Pods Manifest.lock */,
 				40971BA21EDB0EAC004A7E4D /* Sources */,
 				40971BA31EDB0EAC004A7E4D /* Frameworks */,
 				40971BA41EDB0EAC004A7E4D /* Resources */,
+				4BEAA1ED25C74A59E867BE79 /* [CP] Embed Pods Frameworks */,
+				C29F1E1FF2AD0C63337D4430 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +193,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BEAA1ED25C74A59E867BE79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxHearthstone/Pods-RxHearthstone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C29F1E1FF2AD0C63337D4430 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxHearthstone/Pods-RxHearthstone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6E7543F661B615D8066798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40971BA21EDB0EAC004A7E4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400B02711EDB690900E2B53D /* CardsViewController.swift in Sources */,
+				40971BBE1EDB1B72004A7E4D /* ApiManager.swift in Sources */,
+				40971BC01EDB1D2F004A7E4D /* HearthstoneService.swift in Sources */,
+				400B026E1EDB602E00E2B53D /* Card.swift in Sources */,
 				40971BAC1EDB0EAC004A7E4D /* ViewController.swift in Sources */,
+				40971BC31EDB22E1004A7E4D /* Info.swift in Sources */,
+				40971BBC1EDB101E004A7E4D /* Router.swift in Sources */,
 				40971BAA1EDB0EAC004A7E4D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +376,7 @@
 		};
 		40971BB91EDB0EAC004A7E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E64F47D28C32DF8F927885 /* Pods-RxHearthstone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
@@ -274,6 +390,7 @@
 		};
 		40971BBA1EDB0EAC004A7E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2685E5F3E5325D3EBFC29C80 /* Pods-RxHearthstone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
@@ -304,6 +421,7 @@
 				40971BBA1EDB0EAC004A7E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
