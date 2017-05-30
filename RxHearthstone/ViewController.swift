@@ -20,18 +20,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HearthstoneService().bulk().subscribe({ result in
-            result.element!.forEach({ a in
-                print(a.0)
-                a.1.forEach({ b in
-                    print(b.0)
-                    b.1.subscribe({ c in
-                        print(c)
-                    }).disposed(by: self.disposeBag)
-                })
-            })
-        }).disposed(by: disposeBag)
-        
         let data = HearthstoneService().info().map({ info in
             [
                 SectionModel(model: "Patch", items: [info.patch]),
@@ -64,9 +52,20 @@ class ViewController: UIViewController {
             return (indexPath, dataSource[indexPath])
             }
             .subscribe(onNext: { indexPath, model in
-                self.cards = HearthstoneService().cardsBy(clas: model)
-            })
-            .disposed(by: disposeBag)
+                
+                HearthstoneService().cardsBy(clas: model).subscribe(
+                    onNext: { value in
+                        print(value)
+                    },
+                    onError: { error in
+                        print(error)
+                    },
+                    onCompleted: { completed in
+                        print("FINISH")
+                    }
+                    ).disposed(by: self.disposeBag)
+                
+            }).disposed(by: disposeBag)
         
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
     }
